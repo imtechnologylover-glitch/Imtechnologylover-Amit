@@ -6,281 +6,225 @@
     <title>Devi Dayal Shukla - Authorized LIC Agent</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fb;
+    color: #333;
+}
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
 
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-        .nav-links a:hover {
-            color: #ffd700;
-        }
+.nav-links a:hover {
+    color: #ffd700;
+}
 
-        .cta-button {
-            background: #ffd700;
-            color: #1e3c72;
-            padding: 0.8rem 1.5rem;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
+/* BUTTON */
+.cta-button {
+    background: #ffd700;
+    color: #1e3c72;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        .cta-button:hover {
-            transform: translateY(-2px);
-        }
+.cta-button:hover {
+    transform: scale(1.05);
+}
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(30,60,114,0.9), rgba(42,82,152,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23e3f2fd" width="1200" height="600"/><circle fill="%2342a5f5" opacity="0.3" cx="200" cy="150" r="100"/><circle fill="%2390caf9" opacity="0.4" cx="900" cy="300" r="120"/><path fill="%231e3c72" opacity="0.2" d="M0 500 Q300 400 600 500 T1200 500 L1200 600 L0 600 Z"/></svg>');
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            margin-top: 70px;
-        }
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(30,60,114,0.9), rgba(42,82,152,0.9)),
+                url('https://images.unsplash.com/photo-1521790360280-cc88d0c7a6c0');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 80px;
+}
 
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
-        }
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
 
-        .hero-content p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+/* SECTION */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+}
 
-        /* Sections */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1e3c72;
+}
 
-        section {
-            padding: 4rem 0;
-        }
+/* SERVICES */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
 
-        h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 3rem;
-            color: #1e3c72;
-        }
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border-top: 4px solid #ffd700;
+}
 
-        /* Services */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
 
-        .service-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-top: 4px solid #ffd700;
-        }
+.service-icon {
+    font-size: 35px;
+    color: #2a5298;
+    margin-bottom: 10px;
+}
 
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
+/* ABOUT */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
 
-        .service-icon {
-            font-size: 3rem;
-            color: #2a5298;
-            margin-bottom: 1rem;
-        }
+.about-content img {
+    width: 100%;
+    border-radius: 15px;
+}
 
-        /* About */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
+/* FORM */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
 
-        .about-image {
-            background: linear-gradient(45deg, #1e3c72, #2a5298);
-            height: 400px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 4rem;
-        }
+.form-group {
+    margin-bottom: 15px;
+}
 
-        /* Contact */
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
 
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2a5298;
+}
 
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 1rem;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
 
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #2a5298;
-        }
+.submit-btn:hover {
+    background: #1e3c72;
+}
 
-        .submit-btn {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            padding: 1rem 3rem;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            width: 100%;
-            transition: transform 0.3s;
-        }
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-        .submit-btn:hover {
-            transform: translateY(-2px);
-        }
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+}
 
-        /* Stats */
-        .stats {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            text-align: center;
-        }
+.social-links a:hover {
+    color: #ffd700;
+}
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-        }
+/* RESPONSIVE */
+@media(max-width:768px){
+    .nav-links {
+        display: none;
+    }
 
-        .stat-item h3 {
-            font-size: 3rem;
-            color: #ffd700;
-            margin-bottom: 0.5rem;
-        }
+    .hero h1 {
+        font-size: 30px;
+    }
 
-        /* Footer */
-        footer {
-            background: #1a1a1a;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .social-links {
-            margin: 1rem 0;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 1rem;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: #ffd700;
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 <body>
@@ -288,7 +232,7 @@
     <header>
         <nav>
             <div class="logo">
-                <i class="fas fa-shield-alt"></i> LIC of India | Devi Dayal Shukla | Life Insurance Expert
+                <i class="fas fa-shield-alt"></i> LIC Agency
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -394,21 +338,21 @@
             <div>
                 <h3>Your Trusted LIC Partner</h3>
                 <p>With over 35 years of experience as an authorized LIC agent, we have helped thousands of families secure their future. Our personalized approach ensures you get the right policy at the best premium.</p>
-                <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <ul type="square" style="margin-top: 1rem; padding-left: 1.5rem;">
                     <li><i class="fas fa-check" style="color: #2a5298;"></i> Licensed LIC Agent</li>
                     <li><i class="fas fa-check" style="color: #2a5298;"></i> Free Policy Consultation</li>
                     <li><i class="fas fa-check" style="color: #2a5298;"></i> Doorstep Service</li>
                     <li><i class="fas fa-check" style="color: #2a5298;"></i> Claim Assistance</li>
                 </ul>
             </div>
-            <img src="shukla.jpg" Height="400" width="400">
+            <img src="Shukla ji.jpeg" Height="400" width="400">
         </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="container">
         <h2>Get Your Free Quote</h2>
-        <form class="contact-form" onsubmit="handleSubmit(event)">
+        <form class="contact-form" onsubmit="sendTowhatsapp(event)">
             <div class="form-group">
                 <input type="text" placeholder="Full Name" required>
             </div>
@@ -440,9 +384,7 @@
             <h3>Devi Dayal Shukla - Authorized LIC Agent</h3>
             <p>LIC Agency Code: [Your Agency Code] | IRDAI Licensed</p>
             <div class="social-links">
-
-  <!-- WhatsApp -->
-  <a href="https://wa.me/9415556995?text=Hello%20I%20want%20details" target="_blank">
+                <a href="https://wa.me/9415556995?text=Hello%20I%20want%20details" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
@@ -453,10 +395,8 @@
 
   <!-- Email -->
   <a href="mailto:ddshuklalic@gmail.com">
-    <i class="fas fa-envelope"></i>
-  </a>
-
-</div>
+    <i class="fas fa-envelope"></i></a>
+            </div>
             <p>&copy; 2026 LIC Agency. All rights reserved. | LIC of India</p>
         </div>
     </footer>
@@ -477,19 +417,26 @@ function sendToWhatsApp(e){
     + "Email: " + email + "%0a"
     + "Message: " + message;
 
+    // 👉 WhatsApp open
     window.open(url, "_blank");
+
+    // 👉 Thank You message
+    alert("Thank you! We will contact you soon 😊");
+
+    // 👉 Form reset
+    e.target.reset();
 }
 </script>
 
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
-    });
-});
 
         // Add scroll effect to header
         window.addEventListener('scroll', () => {
